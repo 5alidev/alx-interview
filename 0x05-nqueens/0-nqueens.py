@@ -30,18 +30,15 @@ def solve_nqueens(N):
     solutions = []
     backtrack()
     
-    # Print all solutions in the required format
     for solution in solutions:
         print([[i, solution[i]] for i in range(N)])
 
 
 if __name__ == "__main__":
-    # Ensure the correct number of arguments
     if len(sys.argv) != 2:
         print("Usage: nqueens N")
         sys.exit(1)
     
-    # Validate that N is an integer and >= 4
     try:
         N = int(sys.argv[1])
     except ValueError:
@@ -52,5 +49,4 @@ if __name__ == "__main__":
         print("N must be at least 4")
         sys.exit(1)
     
-    # Solve the N queens problem
     solve_nqueens(N)
