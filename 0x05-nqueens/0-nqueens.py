@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+'''
+The N queens puzzle
+'''
 import sys
 
 
@@ -51,4 +54,3 @@ if __name__ == "__main__":
     
     # Solve the N queens problem
     solve_nqueens(N)
-
