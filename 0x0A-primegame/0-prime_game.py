@@ -9,7 +9,6 @@ def sieve_of_eratosthenes(max_n):
     Returns a list where primes[i] is True if i is prime,
     False otherwise.
     """
-
     primes = [True] * (max_n + 1)
     primes[0] = primes[1] = False
     for i in range(2, int(max_n ** 0.5) + 1):
@@ -20,6 +19,7 @@ def sieve_of_eratosthenes(max_n):
 
 
 def isWinner(x, nums):
+    """Function to find the winer in prime game"""
     if x < 1 or not nums:
         return None
 
